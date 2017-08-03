@@ -1849,15 +1849,7 @@ $(document).ready(function() {
 		console.log(emailBody);
 	})
 
-	$('#OK2').on('click' , function () {
-		var elt3 = document.getElementById('your-name');
-		var yourName = elt3.innerText || elt3.textContent;
-		console.log(yourName);
-		$('#ciao').html(yourName + " xxx");
-		var elt4 = document.getElementById('your-email');
-		var yourEmail = elt4.innerText || elt4.textContent;
-		console.log(yourEmail);
-	})
+	
 
 
 

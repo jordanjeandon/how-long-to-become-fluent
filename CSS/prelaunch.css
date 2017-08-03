@@ -207,18 +207,19 @@ padding-top: 20px;
 }
 
 .CTA5 {
-	float: right;
 	background-color: #00FFC6;
 	border: 3px solid #00FFC6;
 	border-radius: 50px ;
 	font-size: 25px;
 	color: #025599;
 	padding: 8px;
-	width: 80px;
+	width: 70px;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-style: normal;
 	text-align: center;
 	text-decoration: none;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 .CTA5:hover{
@@ -779,9 +780,8 @@ padding-top: 200px;
 
 .bloc-principal-email {
 	margin: 0 auto;
-	width: 900px;
-	padding-top: 20px;
-	padding-bottom: 130px;
+	width: 300px;
+	padding-top: 150px;
 }
 
 .entete {
@@ -794,20 +794,16 @@ padding-top: 200px;
 
 .your-friend {
 	padding: 15px;
+	text-align: center;
 	color: white;
 	font-family: 'Roboto';
 	font-size: 22px;
-	float: left;
-	margin-left: 0px
 }
 
 .you {
-	padding: 15px;
 	color: white;
 	font-family: 'Roboto';
 	font-size: 22px;
-	float: left;
-	margin-left: 70px
 }
 
 .first-name {
@@ -817,21 +813,16 @@ padding-top: 200px;
 	font-size: 22px;
 	border: solid 2px #00ffc6;
 	border-radius: 15px;
-	float: left;
-	width: 225px;
-	margin-left: 20px;
 }
 
 .email {
-	padding: 15px;
+ 	padding: 15px;
 	color: white;
 	font-family: 'Roboto';
 	font-size: 22px;
 	border: solid 2px #00ffc6;
 	border-radius: 15px;
-	float: left;
-	width: 300px;
-	margin-left: 20px
+	margin-top: 20px;
 }
 
 .texteemail {
@@ -848,4 +839,3 @@ padding-top: 200px;
 .reachfluency {
 	color:white;
 }
-
