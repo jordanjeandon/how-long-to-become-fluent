@@ -2,10 +2,6 @@ $(document).ready(function() {
 
 // Language choice
 	var language = "" ;
-
-  mixpanel.track("onload", {
-		"loader": "done"
-  });
 	// si on clic sur un drapeau, on récupère la langue
 	$('#french').on('click' , function () {
 		language = "French";
@@ -19,6 +15,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -34,6 +31,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -49,6 +47,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -64,6 +63,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -79,6 +79,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -94,11 +95,12 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
 	$('#japonese').on('click' , function () {
-		language = "Japonese";
+		language = "Japanese";
 		$('#french').removeClass('languechoisie');
 		$('#english').removeClass('languechoisie');
 		$('#spanish').removeClass('languechoisie');
@@ -109,6 +111,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -124,6 +127,7 @@ $(document).ready(function() {
 		$('#russian').addClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -139,6 +143,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').addClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -154,11 +159,13 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').addClass('languechoisie');
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
 	$('#other').on('click' , function () {
 		language = "your language";
+		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
@@ -1573,6 +1580,7 @@ $(document).ready(function() {
      	message += mois[date.getMonth() + moisRestant] + " ";   // mois
      	message += date.getFullYear() + nombreAnnee;
      	console.log(message);
+		sessionStorage.setItem('message', message)
 		$('#fluencyDate').html(message);
 	})
 
@@ -1829,10 +1837,16 @@ $(document).ready(function() {
 		var elt1 = document.getElementById('friend-name');
 		var friendName = elt1.innerText || elt1.textContent;
 		console.log(friendName);
-		$('#hey').html("Hey "+friendName+",");
 		var elt2 = document.getElementById('friend-email');
 		var friendEmail = elt2.innerText || elt2.textContent;
 		console.log(friendEmail);
+ 		console.log(sessionStorage.getItem("language"));
+		var language = sessionStorage.getItem('language')
+		var emailBody = `Hey ${friendName},%0D%0AI’ll reach fluency in ${language} in 2 months !%0D%0ADo you think you can be quicker?%0D%0AFind out for yourself with this quick test: www.how-long-to-become-fluent.com%0D%0AGood luck!!%0D%0Axxx`;
+		$('#mailto').prop('href' ,`mailto:${friendEmail}?subject=I will be fluent in ${language} in 2 months&body=${emailBody}`);
+		$('#mailto').html('Send')
+		mixpanel.track('mailSent');
+		console.log(emailBody);
 	})
 
 	$('#OK2').on('click' , function () {
