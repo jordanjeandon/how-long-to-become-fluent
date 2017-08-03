@@ -42,7 +42,7 @@ padding-top: 20px;
 	font-size: 36px;
 	font-family: 'Roboto';
 	font-style: medium;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 	margin-top: 30px
 }
 
@@ -308,29 +308,29 @@ padding-top: 20px;
 
 #menu01 {
 	padding-top: 90px;
-	padding-bottom: 400px
+	padding-bottom: 320px
 }
 
 #menu02 {
 	padding-top: 90px;
-	padding-bottom: 130px
+	padding-bottom: 20px
 }
 
 #menu03 {
 	padding-top: 90px;
-	padding-bottom: 130px
+	padding-bottom: 20px
 }
 
 #menu04 {
 	padding-top: 90px;
-	padding-bottom: 130px
+	padding-bottom: 110px
 }
 
 
 
 #CENTRER {
 padding-top: 200px;
-padding-bottom: 100px;
+padding-bottom: 150px;
 
 }
 
@@ -824,3 +824,16 @@ padding-bottom: 100px;
 	color:white;
 }
 
+.next {
+	text-align: center;
+	color: #00ffc6;
+	font-family: 'Roboto';
+	font-size: 30px;
+	float: right;
+	margin-right: 100px;
+	text-decoration: none;
+}
+
+.next-div {
+	padding-bottom: 300px
+}
