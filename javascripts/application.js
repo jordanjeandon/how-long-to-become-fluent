@@ -15,6 +15,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -31,6 +32,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -47,6 +49,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -63,6 +66,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -79,6 +83,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -95,6 +100,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -111,6 +117,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -127,6 +134,7 @@ $(document).ready(function() {
 		$('#russian').addClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -143,6 +151,7 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').addClass('languechoisie');
 		$('#turkish').removeClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -159,12 +168,24 @@ $(document).ready(function() {
 		$('#russian').removeClass('languechoisie');
 		$('#portuguese').removeClass('languechoisie');
 		$('#turkish').addClass('languechoisie');
+		$('#other').removeClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
 
 	$('#other').on('click' , function () {
 		language = "your language";
+		$('#french').removeClass('languechoisie');
+		$('#english').removeClass('languechoisie');
+		$('#spanish').removeClass('languechoisie');
+		$('#italian').removeClass('languechoisie');
+		$('#german').removeClass('languechoisie');
+		$('#chinese').removeClass('languechoisie');
+		$('#japonese').removeClass('languechoisie');
+		$('#russian').removeClass('languechoisie');
+		$('#portuguese').removeClass('languechoisie');
+		$('#turkish').removeClass('languechoisie');
+		$('#other').addClass('languechoisie');
 		sessionStorage.setItem('language', language)
 		console.log(language);
 	});
@@ -1443,7 +1464,7 @@ $(document).ready(function() {
 	var week = 0 ;
 
 	// si on clic sur monday, on ajoute 1 jour à la semaine
-	$('#monday').on('click' , function () {
+	$('#mondayxs').on('click' , function () {
 		if ($(this).hasClass('rectangle-gauche-choix')) {
 			$(this).removeClass('rectangle-gauche-choix')
 			week = week - 1 ;
@@ -1454,7 +1475,7 @@ $(document).ready(function() {
 	});
 
 		// si on clic sur monday, on ajoute 1 jour à la semaine
-	$('#tuesday').on('click' , function () {
+	$('#tuesdayxs').on('click' , function () {
 		if ($(this).hasClass('rectangle-milieu-choix')) {
 			$(this).removeClass('rectangle-milieu-choix')
 			week = week - 1 ;
@@ -1465,7 +1486,7 @@ $(document).ready(function() {
 	});
 
 		// si on clic sur monday, on ajoute 1 jour à la semaine
-	$('#wednesday').on('click' , function () {
+	$('#wednesdayxs').on('click' , function () {
 		if ($(this).hasClass('rectangle-milieu-choix')) {
 			$(this).removeClass('rectangle-milieu-choix')
 			week = week - 1 ;
@@ -1476,7 +1497,7 @@ $(document).ready(function() {
 	});
 
 		// si on clic sur monday, on ajoute 1 jour à la semaine
-	$('#thursday').on('click' , function () {
+	$('#thursdayxs').on('click' , function () {
 		if ($(this).hasClass('rectangle-milieu-choix')) {
 			$(this).removeClass('rectangle-milieu-choix')
 			week = week - 1 ;
@@ -1487,7 +1508,7 @@ $(document).ready(function() {
 	});
 
 		// si on clic sur monday, on ajoute 1 jour à la semaine
-	$('#friday').on('click' , function () {
+	$('#fridayxs').on('click' , function () {
 		if ($(this).hasClass('rectangle-milieu-choix')) {
 			$(this).removeClass('rectangle-milieu-choix')
 			week = week - 1 ;
@@ -1498,7 +1519,7 @@ $(document).ready(function() {
 	});
 
 		// si on clic sur monday, on ajoute 1 jour à la semaine
-	$('#saturday').on('click' , function () {
+	$('#saturdayxs').on('click' , function () {
 		if ($(this).hasClass('rectangle-milieu-choix')) {
 			$(this).removeClass('rectangle-milieu-choix')
 			week = week - 1 ;
@@ -1509,7 +1530,83 @@ $(document).ready(function() {
 	});
 
 		// si on clic sur monday, on ajoute 1 jour à la semaine
-	$('#sunday').on('click' , function () {
+	$('#sundayxs').on('click' , function () {
+		if ($(this).hasClass('rectangle-droite-choix')) {
+			$(this).removeClass('rectangle-droite-choix')
+			week = week - 1 ;
+		} else {
+			$(this).addClass('rectangle-droite-choix');
+			week = week + 1 ;
+		}
+	});
+	// si on clic sur monday, on ajoute 1 jour à la semaine
+	$('#mondaylg').on('click' , function () {
+		if ($(this).hasClass('rectangle-gauche-choix')) {
+			$(this).removeClass('rectangle-gauche-choix')
+			week = week - 1 ;
+		} else {
+			$(this).addClass('rectangle-gauche-choix');
+			week = week + 1 ;
+		}
+	});
+
+		// si on clic sur monday, on ajoute 1 jour à la semaine
+	$('#tuesdaylg').on('click' , function () {
+		if ($(this).hasClass('rectangle-milieu-choix')) {
+			$(this).removeClass('rectangle-milieu-choix')
+			week = week - 1 ;
+		} else {
+			$(this).addClass('rectangle-milieu-choix');
+			week = week + 1 ;
+		}
+	});
+
+		// si on clic sur monday, on ajoute 1 jour à la semaine
+	$('#wednesdaylg').on('click' , function () {
+		if ($(this).hasClass('rectangle-milieu-choix')) {
+			$(this).removeClass('rectangle-milieu-choix')
+			week = week - 1 ;
+		} else {
+			$(this).addClass('rectangle-milieu-choix');
+			week = week + 1 ;
+		}
+	});
+
+		// si on clic sur monday, on ajoute 1 jour à la semaine
+	$('#thursdaylg').on('click' , function () {
+		if ($(this).hasClass('rectangle-milieu-choix')) {
+			$(this).removeClass('rectangle-milieu-choix')
+			week = week - 1 ;
+		} else {
+			$(this).addClass('rectangle-milieu-choix');
+			week = week + 1 ;
+		}
+	});
+
+		// si on clic sur monday, on ajoute 1 jour à la semaine
+	$('#fridaylg').on('click' , function () {
+		if ($(this).hasClass('rectangle-milieu-choix')) {
+			$(this).removeClass('rectangle-milieu-choix')
+			week = week - 1 ;
+		} else {
+			$(this).addClass('rectangle-milieu-choix');
+			week = week + 1 ;
+		}
+	});
+
+		// si on clic sur monday, on ajoute 1 jour à la semaine
+	$('#saturdaylg').on('click' , function () {
+		if ($(this).hasClass('rectangle-milieu-choix')) {
+			$(this).removeClass('rectangle-milieu-choix')
+			week = week - 1 ;
+		} else {
+			$(this).addClass('rectangle-milieu-choix');
+			week = week + 1 ;
+		}
+	});
+
+		// si on clic sur monday, on ajoute 1 jour à la semaine
+	$('#sundaylg').on('click' , function () {
 		if ($(this).hasClass('rectangle-droite-choix')) {
 			$(this).removeClass('rectangle-droite-choix')
 			week = week - 1 ;
@@ -1524,26 +1621,49 @@ $(document).ready(function() {
 	var intensity = 0 ;
 
 	// si on clic sur less, on ajoute
-	$('#less').on('click' , function () {
+	$('#lessxs').on('click' , function () {
 		intensity = 0.4 ;
 		if ($(this).hasClass('rectangle-gauche-choix')) {
 			$(this).removeClass('rectangle-gauche-choix')
-			$('#more').addClass('rectangle-droite-choix')
+			$('#morexs').addClass('rectangle-droite-choix')
 		} else {
 			$(this).addClass('rectangle-gauche-choix');
-			$('#more').removeClass('rectangle-droite-choix')
+			$('#morexs').removeClass('rectangle-droite-choix')
 		}
 	});
 
 		// si on clic sur more,
-	$('#more').on('click' , function () {
+	$('#morexs').on('click' , function () {
 		intensity = 1 ;
 		if ($(this).hasClass('rectangle-droite-choix')) {
 			$(this).removeClass('rectangle-droite-choix')
-			$('#less').addClass('rectangle-gauche-choix')
+			$('#lessxs').addClass('rectangle-gauche-choix')
 		} else {
 			$(this).addClass('rectangle-droite-choix');
-			$('#less').removeClass('rectangle-gauche-choix')
+			$('#lessxs').removeClass('rectangle-gauche-choix')
+		}
+	});
+
+	$('#lesslg').on('click' , function () {
+		intensity = 0.4 ;
+		if ($(this).hasClass('rectangle-gauche-choix')) {
+			$(this).removeClass('rectangle-gauche-choix')
+			$('#morelg').addClass('rectangle-droite-choix')
+		} else {
+			$(this).addClass('rectangle-gauche-choix');
+			$('#morelg').removeClass('rectangle-droite-choix')
+		}
+	});
+
+		// si on clic sur more,
+	$('#morelg').on('click' , function () {
+		intensity = 1 ;
+		if ($(this).hasClass('rectangle-droite-choix')) {
+			$(this).removeClass('rectangle-droite-choix')
+			$('#lesslg').addClass('rectangle-gauche-choix')
+		} else {
+			$(this).addClass('rectangle-droite-choix');
+			$('#lesslg').removeClass('rectangle-gauche-choix')
 		}
 	});
 
@@ -1551,12 +1671,12 @@ $(document).ready(function() {
 // resultats
 	$('#result').on('click' , function () {
 		var step = (readingGoal+writingGoal+speakingGoal+listeningGoal)-(readingLevel+writingLevel+speakingLevel+listeningLevel);
-		console.log("step" + step)
+		console.log(step + "step")
 		var hours = step * 17 ;
-		console.log("hours" + hours);
+		console.log(hours + "hours");
 
 		var timelapse = hours/(week * intensity); // nombre de semaine
-		console.log('nombre de semaine' + timelapse) ;
+		console.log(timelapse + "semaine") ;
 
 		var date = new Date();
 
@@ -1566,13 +1686,13 @@ $(document).ready(function() {
 
 
 		var nombreMois = Math.floor(timelapse / 4.3) ; // nombre de mois
-		console.log('nombreMois'+ nombreMois);
+		console.log(nombreMois + 'nombreMois');
 
 		var moisRestant = nombreMois % 12 ; // pour connaitre le resultat mois
-		console.log('mois restant' + moisRestant)
+		console.log(moisRestant +'mois restant')
 
 		var nombreAnnee = Math.floor((nombreMois + date.getMonth())/12)
-		console.log('nombre annee' + nombreAnnee)
+		console.log(nombreAnnee + 'annee')
 
 
 		var message = jours[date.getDay()] + " ";   // nom du jour

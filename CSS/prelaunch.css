@@ -124,6 +124,7 @@ padding-top: 20px;
 .CTA1:hover{
 	background-color: transparent;
 	color: #00FFC6;
+	text-decoration: none;
 
 }
 
@@ -157,29 +158,22 @@ padding-top: 20px;
 }
 
 .CTA3 {
-	margin: auto;
-	display: block;
 	background-color: #00FFC6;
 	border: 3px solid #00FFC6;
-	border-radius: 50px ;
-	font-size: 30px;
+	border-radius: 50px;
+	font-size: 20px;
 	color: #025599;
 	padding: 8px;
-	width: 500px;
 	font-family: 'Montserrat Alternates', sans-serif;
-	font-style: normal;
-	text-align: center;
-	text-decoration: none;
+	
 }
 
 .CTA3:hover{
 	background-color: transparent;
 	color: #00FFC6;
+	text-decoration: none;
 }
 
-.CTA3:active{
-	transform: scale(1.03);
-}
 
 .CTA4 {
 	float: right;
